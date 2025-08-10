@@ -1,0 +1,570 @@
+body,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+img,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body * + * {
+  margin-top: 1.5rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+html {
+  font-family: "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 100%;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000 url("../media/dot-white-lg.png") top center fixed;
+  height: 100%;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2) {
+  body {
+    background-size: 9px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}
+
+a,
+a:visited {
+  color: #ff1787;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #e68a00;
+}
+
+strong {
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-weight: normal;
+}
+
+em {
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  border: none;
+  display: block;
+}
+
+pre {
+  font-family: "Menlo-Regular", Monaco, "Andale Mono", monospace;
+  font-weight: 400;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+li,
+dt,
+dd,
+br,
+th,
+td {
+  margin-top: 0;
+}
+
+.skip-to-content {
+  background-color: #f90;
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  margin-top: 0;
+  position: absolute;
+  top: 0;
+  right: 100%;
+}
+.skip-to-content:hover,
+.skip-to-content:focus {
+  color: white;
+}
+.skip-to-content:focus {
+  right: auto;
+  z-index: 10001;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.container {
+  max-width: 86em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro-title {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30rem;
+}
+@media only screen and (min-width: 48.0625em) {
+  .intro-title {
+    font-size: 2.5rem;
+    max-width: 50rem;
+  }
+}
+
+.intro-cta {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  color: white;
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 48.0625em) {
+  .intro-cta {
+    font-size: 1.25rem;
+    margin-top: 3rem;
+  }
+}
+
+a.button {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  border: 2px solid black;
+  color: black;
+  display: inline-block;
+  letter-spacing: 0.0625em;
+  line-height: 1.1;
+  padding: 1.25em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  min-width: 7rem;
+}
+@media only screen and (max-width: 48em) {
+  a.button {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 48.0625em) {
+  a.button {
+    padding: 1.25em 2.5em;
+  }
+}
+a.button:hover,
+a.button:focus {
+  color: white;
+}
+a.button.reversed {
+  color: white;
+  border-color: white;
+  box-shadow: 0 0 0 transparent;
+}
+a.button.reversed:hover,
+a.button.reversed:focus {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border-color: transparent;
+  color: #ff1787;
+}
+a.button.small {
+  border-width: 1px;
+  font-size: 0.875rem;
+  padding: 0.625em 1.25em;
+}
+a.button.orange-hover:hover,
+a.button.orange-hover:focus {
+  background: linear-gradient(-210deg, #f90, #ff1787);
+  background-color: #f90;
+  border-color: #ff1787;
+}
+a.button.disabled,
+a.button.disabled:hover,
+a.button.disabled:focus {
+  background-color: transparent;
+  border-color: #ccc;
+  color: #ccc;
+}
+.header {
+  margin-top: 0;
+}
+.footer {
+  font-smoothing: antialiased;
+  color: white;
+  margin-top: 0;
+  padding: 4rem 0;
+  text-align: center;
+}
+.footer h2 {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.125em;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 48em) {
+  .footer h2 {
+    font-size: 0.75rem;
+  }
+}
+.footer a {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 0;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+@media only screen and (max-width: 48em) {
+  .footer a {
+    font-size: 1.25rem;
+  }
+}
+.footer a:hover,
+.footer a:focus {
+  text-shadow: 0 0 10px white;
+  border-bottom-color: #fff;
+}
+.footer span {
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  display: inline-block;
+  font-size: 2.5rem;
+  margin: -0.5rem 1rem 0;
+  opacity: 0.5;
+  vertical-align: baseline;
+}
+@media only screen and (max-width: 48em) {
+  .footer span {
+    font-size: 1.75rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+.brand {
+  align-items: center;
+  display: flex;
+  padding: 4rem 2rem 2rem;
+  width: 100%;
+  height: 100vh;
+}
+.brand-logo {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 2s ease;
+}
+.brand-logo svg {
+  height: 75vmin;
+}
+@media only screen and (min-width: 48.0625em) {
+  .brand-logo svg {
+    height: 60vmin;
+  }
+}
+.brand-logo svg path {
+  transition: all 1s ease;
+  transform-origin: 50% 50%;
+}
+.brand-logo svg path:nth-of-type(1) {
+  transform-origin: 100% 50%;
+}
+.brand-logo svg path:nth-of-type(2) {
+  transition-delay: 0.4s;
+}
+.brand-logo svg path:nth-of-type(3) {
+  transform-origin: 0 50%;
+}
+.brand-logo svg path:nth-of-type(4) {
+  transition-delay: 0.6s;
+}
+.brand-logo.fade-out {
+  filter: blur(40px);
+}
+.brand-logo.fade-out svg path {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.blur-fade {
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  mask: linear-gradient(black, transparent);
+  backdrop-filter: blur(6px) brightness(50%);
+  width: 100%;
+  height: 120px;
+  z-index: 9000;
+}
+
+.nav {
+  margin-top: 0;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 10000;
+}
+.nav ul {
+  display: flex;
+  line-height: 1;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+}
+.nav a {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  color: white;
+  display: inline-block;
+  padding: 1rem 0 0.5rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
+  letter-spacing: 0.0625rem;
+}
+.nav a:hover,
+.nav a:focus {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.nav a.active {
+  border-bottom: 3px solid white;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+@media only screen and (max-width: 48em) {
+  .projects {
+    margin-top: 1rem;
+  }
+}
+
+.project {
+  font-smoothing: antialiased;
+  background: #222;
+  box-shadow: 0 0 1rem black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30em;
+  margin: 0;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s ease;
+  max-width: 40em;
+}
+@media only screen and (min-width: 48.0625em) {
+  .project {
+    padding: 2rem;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2) {
+  .project {
+    background-size: 4.5px;
+  }
+}
+
+.project-title {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin-top: 0;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 48.0625em) {
+  .project-title {
+    font-size: 4rem;
+  }
+}
+
+.project-details {
+  flex: 1;
+}
+.project-details p {
+  font-family: "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  max-width: 500px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 48.0625em) {
+  .project-details p {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .project-details dl {
+    font-size: 0.875rem;
+  }
+}
+.project-details dt {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  display: block;
+  font-size: 0.75em;
+  letter-spacing: 0.0625em;
+  opacity: 0.6;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.project-details dd + dt {
+  margin-top: 0.75rem;
+}
+.project-details dd {
+  font-family: "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#theinformation {
+  background-color: #f32a52;
+}
+#theinformation a.button:hover,
+#theinformation a.button:focus {
+  color: #f32a52;
+}
+
+#cornell {
+  background-color: #b31b1b;
+}
+#cornell a.button:hover,
+#cornell a.button:focus {
+  color: #b31b1b;
+}
+
+#smalls {
+  background-color: #222222;
+}
+#smalls a.button:hover,
+#smalls a.button:focus {
+  color: #222222;
+}
+
+#toryburch {
+  background-color: #0c2340;
+}
+#toryburch a.button:hover,
+#toryburch a.button:focus {
+  color: #0c2340;
+}
+
+#insideschools {
+  background-color: #2968c5;
+}
+#insideschools a.button:hover,
+#insideschools a.button:focus {
+  color: #2968c5;
+}
+
+#geoh {
+  background-color: #22003e;
+}
+#geoh a.button:hover,
+#geoh a.button:focus {
+  color: #22003e;
+}
